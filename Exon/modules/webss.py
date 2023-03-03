@@ -54,7 +54,7 @@ async def take_screenshot(url: str, full: bool = False):
         "url": url,
         "width": 1920,
         "height": 1080,
-        "scale": 2,
+        "scale": 1,
         "format": "jpg",
     }
     if full:
