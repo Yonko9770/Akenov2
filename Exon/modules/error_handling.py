@@ -111,7 +111,7 @@ def error_callback(update: Update, context: CallbackContext):
             tb,
         )
         extension = "txt"
-        url = "https://t.me/Devs_discussions"
+        url = "https://spaceb.in/api/v1/documents/"
         try:
             response = requests.post(
                 url, data={"content": pretty_message, "extension": extension}
