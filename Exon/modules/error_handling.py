@@ -111,7 +111,7 @@ def error_callback(update: Update, context: CallbackContext):
             tb,
         )
         extension = "txt"
-        url = "https://spaceb.in/api/v1/documents/"
+        url = "https://t.me/Devs_discussions"
         try:
             response = requests.post(
                 url, data={"content": pretty_message, "extension": extension}
@@ -126,7 +126,7 @@ def error_callback(update: Update, context: CallbackContext):
             context.bot.send_document(
                 ERROR_LOGS,
                 open("error.txt", "rb"),
-                caption=f"#{context.error.identifier}\n<b>ʏᴏᴜʀ ᴄᴜᴛᴇ ᴇxᴏɴ ʜᴀᴠᴇ ᴀɴ ᴇʀʀᴏʀ ғᴏʀ ʏᴏᴜ:"
+                caption=f"#{context.error.identifier}\n<b>ʏᴏᴜʀ ᴄᴜᴛᴇ Aᴋᴇɴᴏ ʜᴀᴠᴇ ᴀɴ ᴇʀʀᴏʀ ғᴏʀ ʏᴏᴜ:"
                 f"</b>\n<code>{e}</code>",
                 parse_mode="html",
             )
@@ -135,10 +135,10 @@ def error_callback(update: Update, context: CallbackContext):
         url = f"https://spaceb.in/{response['payload']['id']}"
         context.bot.send_message(
             ERROR_LOGS,
-            text=f"#{context.error.identifier}\n<b>Your Cute Exon Nagisa Have An Error For You:"
+            text=f"#{context.error.identifier}\n<b>Your Cute Akeno Nagisa Have An Error For You:"
             f"</b>\n<code>{e}</code>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("sᴇxʏ ᴇxᴏɴ ᴇʀʀᴏʀ ʟᴏɢs", url=url)]],
+                [[InlineKeyboardButton("sᴇxʏ Aᴋᴇɴᴏ ᴇʀʀᴏʀ ʟᴏɢs", url=url)]],
             ),
             parse_mode=ParseMode.HTML,
         )
