@@ -52,8 +52,8 @@ async def take_screenshot(url: str, full: bool = False):
     url = "https://" + url if not url.startswith("http") else url
     payload = {
         "url": url,
-        "width": 1920,
-        "height": 1080,
+        "width": 320,
+        "height": 240,
         "scale": 1,
         "format": "jpeg",
     }
