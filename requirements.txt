@@ -56,7 +56,8 @@ gpytranslate==1.5.1
 cloudscraper==1.2.68
 carbonnow
 pretty_errors
-
+youtube_search_python
+yt_dlp
 
 
 
