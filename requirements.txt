@@ -59,7 +59,7 @@ pretty_errors
 youtube_search_python
 yt_dlp
 youtube_search
-
+geopy
 
 
 
