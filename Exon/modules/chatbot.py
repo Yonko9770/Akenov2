@@ -65,7 +65,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
     return ""
 
 
-@run_async
+run_async
 @user_admin_no_reply
 @gloggable
 def kukiadd(update: Update, context: CallbackContext) -> str:
@@ -94,7 +94,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
     return ""
 
 
-@run_async
+run_async
 @user_admin
 @gloggable
 def kuki(update: Update, context: CallbackContext):
