@@ -101,4 +101,4 @@ def lang_button(update: Update, _) -> None:
 
     query.message.edit_text(
         gs(chat.id, "set_chat_lang").format(get_language(lang)[:-3])
-    )
+      )
