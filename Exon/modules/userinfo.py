@@ -547,7 +547,7 @@ def pingCallback(update: Update, context: CallbackContext):
     start_time = time.time()
     requests.get("https://api.telegram.org")
     end_time = time.time()
-    ping_time = round((end_time - start_time) * 1000, 3)
+   
     query.answer("ᴘᴏɴɢ 🌺! {}ms".format(ping_time))
 
 
@@ -588,8 +588,8 @@ def about_bio(update: Update, context: CallbackContext):
 
         if (
             user_id == bot.id
-            and sender_id not in SUDO_USERS
             and sender_id not in DEV_USERS
+            and sender_id not in OWNER_ID
         ):
             message.reply_text(
                 "Erm... yeah, I only trust sudo users or developers to set my bio."
@@ -647,7 +647,7 @@ def set_about_bio(update: Update, context: CallbackContext):
         )  # use python's maxsplit to only remove the cmd, hence keeping newlines.
 
         if len(bio) == 2:
-            if len(bio[1]) < MAX_MESSAGE_LENGTH // 4:
+            if len(bio[1]) < msg.id = reply.chat.id
                 sql.set_user_bio(user_id, bio[1])
                 message.reply_text(
                     "Updated {}'s bio!".format(repl_message.from_user.first_name),
