@@ -516,9 +516,9 @@ def stats(update, context):
         update.effective_message.reply_text(
             status
             + "\n*Bot statistics*:\n"
-            + "\n".join([mod.__stats__() for mod in STATS])
-            + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://github.com/Abishnoi69/ExonRobot) | ⍚\n\n "
-            + "╘══「 by [ᴀʙɪsʜɴᴏɪ](github.com/Abishnoi69) 」\n",
+            + "\n Stats total user = ("m.db.users")
+            + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://t.me/YeahOffline) | ⍚\n\n "
+            + "╘══「 by [ᴀʙɪsʜɴᴏɪ](github.com/YeahOffline) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
             disable_web_page_preview=True,
